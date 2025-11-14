@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Часто задаваемые вопросы - AutoCustomTech</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="AutoCustomTech">AutoCustomTech</span>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+<li><a href="about.html">О нашей организации</a></li>
+<li class="active"><a href="faq.html">Часто задаваемые вопросы</a></li>
+<li class="btn"><a href="support.html">Поддержка</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="faq-container container">
+            <h2>Часто задаваемые вопросы</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько времени занимает изготовление кастомной детали?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Срок изготовления зависит от сложности детали: простые элементы - 3-5 дней, сложные конструкции - 2-3 недели. Точный срок озвучиваем после обсуждения проекта.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие материалы вы используете для производства?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Работаем с нержавеющей сталью, карбоном, алюминиевыми сплавами, титаном и высококачественным пластиком. Подбираем материал под конкретные задачи клиента.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Возможно ли создать деталь по моему эскизу?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да! Мы специализируемся на реализации индивидуальных проектов. Присылайте эскизы, чертежи или даже фотографии - наши инженеры воплотят ваши идеи в металле.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы гарантию на изделия?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Гарантия 12 месяцев на все изделия. На карбоновые детали - 18 месяцев. Гарантия покрывает производственные дефекты и проблемы с материалами.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как происходит установка деталей?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Предлагаем услуги профессиональной установки в нашем техцентре. Также предоставляем подробные инструкции для самостоятельного монтажа и видео-гайды.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Работаете ли вы с инновационными материалами?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да! Осваиваем 3D-печать металлом, нанокомпозиты и умные материалы с памятью формы. Консультируем по новейшим технологиям в автотронинге.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggle = question.querySelector('.faq-toggle');
+                
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                toggle.textContent = answer.style.display === 'block' ? '−' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
